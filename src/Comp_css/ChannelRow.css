@@ -1,0 +1,45 @@
+.channelRow{
+  display: flex;
+  align-items: center;
+  padding: 10px 2px;
+}
+.channelRow_text{
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+}
+.channelRow_text p {
+  color: slategray;
+  font-size: 0.7rem;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.channelRow_text h4{
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: start;
+}
+.channelRow .MuiAvatar-root{
+  width: 120px;
+  height: 120px;
+}
+.channelRow_text svg.MuiSvgIcon-root {
+  font-size: 16px;
+  margin-left: 7px;
+}
+
+@media screen and (max-width:560px){
+  .channelRow .MuiAvatar-root{
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width:600px){
+  .channelRow .MuiAvatar-root{
+    width: 120px;
+    height: 120px;
+  }
+}

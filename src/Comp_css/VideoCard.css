@@ -1,0 +1,39 @@
+.videoCard{
+  width: 275px;
+  height: 243px;
+  margin: 20px;
+}
+/* #--------------------------------------top-image(Main ThumbNail)---------------------------------------- */
+.videoCard_info_top{
+  display: flex;
+}
+.videoCard iframe {
+  width: 274px;
+  height: 150px;
+}
+/* #----------------------------------------below container----------------------------------------- */
+.videoCard_info {
+  display: flex;
+  padding-top: 10px;
+}
+/* #----------------------------------------left-channel-Avatar------------------------------------------ */
+.videoCard_info .MuiAvatar-root {
+  width: 32px;
+  height: 32px;
+  margin: 2px;
+}
+/* #----------------------------------------right-video-text---------------------------------------- */
+.video_text{
+  padding-left: 10px;
+}
+.video_text p {
+  margin-bottom: 1px;
+  font-size: 0.69rem;
+  font-family: 'Roboto';
+  letter-spacing: 0.03rem;
+}
+.video_text h6 {
+  font-size: 0.9rem;
+  font-family: 'roboto',sans-serif;
+  font-weight: 600;
+}

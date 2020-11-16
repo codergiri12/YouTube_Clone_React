@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+hr{
+  background-color: #464646;
+  height: 1px;
+  border: none;
+}
+
+
+
+/* #--------------------------default selected li color--------------------------------- */
+.selected{
+  background-color: rgba(144,144,144,0.219);
+}
+.selected svg{
+  color: red;
+}
+.nav-menu-items{
+  width: 100%;
+}
+/* #---------------------------whole main container--------------------------- */
+.nav-menu{
+  background-color: white;
+  width: 180px;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  box-shadow: 0px 0px 0.4rem 0.009rem black;
+}
+
+.nav-menu.active{
+  left: 0;
+  transition: 350ms;
+}
+/* #--------------------------top Part containing(Logo,hamburger Icon)-------------------------------- */
+#nav-bar-toggle{
+  width: 100%;
+  margin-top: 13px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: start;
+  align-items: center;
+}
+img.yt_logo__leftnav {
+  width: 76px;
+  margin-left: 20px;
+}
+.youtube-logo{
+  padding-right: 0.2rem;
+  margin-left: 50px;
+}
+.menu-bars{
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: black;
+  margin-top: 6px;
+}
+/* #-------------------------------Nav section(all li items)--------------------------------- */
+.nav-section{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* #-------------------------------text inside every <li> </li>----------------------------------- */
+.nav-text {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  height: 39px;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 0.03rem;
+  padding: 9px 1rem;
+}
+li.nav-text svg {
+  width: 19px;
+  margin-right: 10px;
+}
+
+.nav-text a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  margin-left: 1rem;
+}
+
+.nav-text:hover{
+  background-color: rgba(144,144,144,0.100);
+  cursor: pointer;
+}
+.nav-text:hover svg{
+  color: red;
+}

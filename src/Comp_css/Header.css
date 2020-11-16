@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  position: sticky;
+  z-index: 1;
+  background: white;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+.common_header_parts {
+  padding: 4px;
+}
+/* #-------------------------------------left-header-------------------------------------- */
+.left_header_part {
+  display: flex;
+  justify-content: start;
+}
+img.yt_logo {
+  width: 54px;
+  height: 20px;
+  margin: 0px 4px;
+  margin-top: 3px;
+}
+#menubar_header{
+  transition: 850ms;
+}
+
+/* #-------------------------------------middle-header-------------------------------------- */
+.middle_header_part{
+  height: 34px;
+  display:flex;
+}
+input.search_box {
+  width: 100%;
+}
+button.search_btn {
+  background: #F8F8F8; 
+  border: 1px solid gray;
+}
+.search_btn svg.MuiSvgIcon-root {
+  width: 2.8em;
+  color: #333;
+  font-size: 1.2em;
+  vertical-align: text-bottom;
+}
+
+/* # --------------------------------------right_header--------------------------------------- */
+.last_header_part {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* #---------------------------------media quiries---------------------------- */
+@media screen and (min-width:560px){
+  .left_header_part{
+    padding-left: 1.5rem;
+    width: 20%;
+  }
+  .left_header_part a{
+    margin-right: 10px;
+  }
+  .middle_header_part{
+    width: 50%;
+  }
+  .last_header_part{
+    width: 23%;
+  }
+}
+@media screen and (min-width:720px){
+  .left_header_part img.yt_logo {
+    width: 88px;
+    height: 33px;
+    margin: 0px 4px;
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width:560px){
+  .left_header_part{
+    padding-left: 10px;
+  }
+  .last_header_part svg{
+    width: 17px;
+    height: 20px;
+    margin: 0px 5px;
+  }
+
+}
+@media screen and (max-width:430px){
+  .search_btn svg.MuiSvgIcon-root{
+    width:1.5em ;
+  }
+  .last_header_part{
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width:992px){
+  .last_header_part svg{
+    
+    margin: 0px 10px;
+  }
+  .last_header_part{
+    justify-content: center;
+  }
+}
